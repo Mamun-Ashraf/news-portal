@@ -12,8 +12,10 @@ const displayNewsCategories = newsCategories => {
         const newsCategoryLi = document.createElement('li')
         newsCategoryLi.innerText = `
         ${newsCategory.category_name}
+        ${newsCategory.category_id}
         `;
         categoriesUl.appendChild(newsCategoryLi);
+
     });
 }
 
@@ -27,7 +29,7 @@ const loadCategoriesDetails = async () => {
 }
 
 const displayCategoriesDetails = (categoriesdetails) => {
-    console.log(categoriesdetails);
+    // console.log(categoriesdetails);
     const categoriesDiv = document.getElementById('categories-details');
     categoriesdetails.forEach(categoryDetails => {
         const categoryDetailsDiv = document.createElement('div');
