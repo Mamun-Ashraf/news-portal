@@ -12,7 +12,6 @@ const displayNewsCategories = newsCategories => {
         const newsCategoryLi = document.createElement('li')
         newsCategoryLi.innerText = `
         ${newsCategory.category_name}
-        ${newsCategory.category_id}
         `;
         categoriesUl.appendChild(newsCategoryLi);
 
