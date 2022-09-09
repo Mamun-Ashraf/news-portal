@@ -28,7 +28,6 @@ const loadCategoriesDetails = async (categoryId) => {
 }
 
 const displayCategoriesDetails = (categoriesdetails) => {
-    // console.log(categoriesdetails);
     const categoriesDiv = document.getElementById('categories-details');
     categoriesdetails.forEach(categoryDetails => {
         const categoryDetailsDiv = document.createElement('div');
