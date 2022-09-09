@@ -54,4 +54,3 @@ const displayCategoriesDetails = (categoriesdetails) => {
         categoriesDiv.appendChild(categoryDetailsDiv);
     });
 }
-loadCategoriesDetails();
