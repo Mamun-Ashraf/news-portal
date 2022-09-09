@@ -6,7 +6,6 @@ const loadNewsCategories = async () => {
 }
 
 const displayNewsCategories = newsCategories => {
-    // console.log(newsCategories);
     const categoriesUl = document.getElementById('news-categories');
     newsCategories.forEach(newsCategory => {
         const newsCategoryLi = document.createElement('li')
