@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class=" navbar bg-light">
+            <div class="container">
+                <a class="navbar-brand">Daily News</a>
+                <form class="d-flex" role="search">
+                    <a href="index.html" class="navbar-brand">News</a>
+                    <a href="blog.html" class="navbar-brand">Blog</a>
+                </form>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section class="container mt-5 bg-info p-5">
+            <p class="fs-5"><span class="fw-bold">Q-1 : </span>What is the difference between var, let and const
+                variable ?</p>
+            <p class="fs-6"><span class="fw-bold">Ans : </span>
+            <ul>
+                <li>var and let create variables that can be reassigned another value.</li>
+                <li>const creates "constant" variables that cannot be reassigned another value.</li>
+                <li>if you're not going to change the value of a variable, it is good practice to use const.</li>
+            </ul>
+            </p>
+            <p class="fs-5"><span class="fw-bold">Q-2 : </span>what is the difference between arrow function and regular
+                function ?</p>
+            <p class="fs-6"><span class="fw-bold">Ans : </span>
+            <ul>
+                <li>No arguments object in arrow functions</li>
+                <li>Arrow functions do not create their own this binding</li>
+                <li>Arrow functions cannot be used as constructors</li>
+                <li>Arrow functions cannot be declared</li>
+                <li>Arrow functions cannot be accessed before initialization</li>
+            </ul>
+            </p>
+            <p class="fs-5"><span class="fw-bold">Q-3 : </span>what is the difference among map, forEach, filter and
+                find loop ?</p>
+            <p class="fs-6"><span class="fw-bold">Ans : </span>
+                <br />
+                <span class="fw-semibold">.map()</span>
+                <br />
+                <span>
+                    Function .map() is a manipulative function that can modify each element’s content in an array that
+                    it is called on. This function returns a new array with modified values, the array that it is called
+                    on will stay still. This function is useful for adding a little change to an already existing array,
+                    for example adding a property to an object or modifying it. Its construction and use are identical
+                    to the previous function .forEach() and both can be used interchangeably.
+
+                    Just like the function .forEach(), this function takes only 1 parameter .map(callback). The
+                    parameter callback can take up to 3 parameters element, index & array (but only the element
+                    parameter is required, the rest is optional).
+                </span>
+                <br /><br />
+                <span class="fw-semibold">.forEach()</span>
+                <br />
+                <span>
+                    Function .forEach() is another form of just a plain for loop that can be used to iterate through
+                    array items. This case of a function is used for more complex arrays, for example, an array of
+                    objects with a lot of entries than just an array of integers.
+
+                    This function also takes 1 parameter .forEach(callback). The parameter callback can take up to 3
+                    parameters element, index & array (but only the element parameter is required, the rest is
+                    optional).
+
+                    The parameter element will be used as a variable that stores the current element in the array.
+                    Parameter index refers to the element's index in the array and the parameter array points to the
+                    array that it was called on.
+                </span>
+                <br /><br />
+                <span class="fw-semibold">.filter()</span>
+                <br />
+                <span>
+                    Function .filter() is a search function that returns all the elements that fulfil the assigned
+                    condition. You can search by simple terms, for example, that element is equal to a certain integer,
+                    or by more advanced terms, for example, searching for an object with certain property that is equal
+                    to something.
+                </span>
+                <br /><br />
+                <span class="fw-semibold">.find()</span>
+                <br />
+                <span>
+                    Function .find() is also a search function like the previous but they differ in one small detail —
+                    this
+                    function returns only one match in an array. If in an array is more than one result, the function
+                    will
+                    return the first that has matched.
+                </span>
+            </p>
+            <p class="fs-5"><span class="fw-bold">Q-4 : </span>Why do you use Template string ?</p>
+            <p class="fs-6"><span class="fw-bold">Ans : </span>
+                Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings,
+                string interpolation with embedded expressions, and special constructs called tagged templates.
+
+                Template literals are sometimes informally called template strings, because they are used most commonly
+                for string interpolation (to create strings by doing substitution of placeholders). However, a tagged
+                template literal may not result in a string; it can be used with a custom tag function to perform
+                whatever operations you want on the different parts of the template literal.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
